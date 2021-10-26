@@ -1165,3 +1165,14 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 60ms (Views: 41.7ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2021-10-22 01:22:24 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/abhigyan/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by TradesController#index as HTML
+  Rendering trades/index.html.erb within layouts/application
+  [1m[36mTrade Load (0.1ms)[0m  [1m[34mSELECT "trades".* FROM "trades"[0m
+  ↳ app/views/trades/index.html.erb:4
+  Rendered trades/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 273ms (Views: 248.0ms | ActiveRecord: 0.3ms)
+
+
